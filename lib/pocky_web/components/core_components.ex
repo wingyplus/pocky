@@ -597,6 +597,17 @@ defmodule PockyWeb.CoreComponents do
     """
   end
 
+  @doc """
+  Renders money from subunit into Thai baht.
+  """
+  attr :amount, :integer, required: true
+
+  def money(%{amount: amount} = assigns) do
+    ~H"""
+    <span><%= Money.to_string(Money.new(amount, :THB), separator: ",", delimeter: ".") %></span>
+    """
+  end
+
   ## JS Commands
 
   def show(js \\ %JS{}, selector) do
