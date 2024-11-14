@@ -1,0 +1,6 @@
+{
+  "name": "pocky",
+  "engineVersion": "v0.13.7",
+  "sdk": "elixir@74ba792aeb37b9f28aff4d7140b47d527c872f5a",
+  "source": ".dagger"
+}
